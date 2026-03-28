@@ -1,12 +1,13 @@
-import { getWhatsAppUrl } from "./WhatsAppButton";
+import { Link } from "react-router-dom";
 
 interface ProductCardProps {
+  id: string;
   name: string;
   description: string;
   image: string;
 }
 
-const ProductCard = ({ name, description, image }: ProductCardProps) => {
+const ProductCard = ({ id, name, description, image }: ProductCardProps) => {
   return (
     <div className="group sparkle-border rounded-xl overflow-hidden transition-all duration-300 card-glow">
       <div className="relative overflow-hidden aspect-square">
@@ -23,14 +24,12 @@ const ProductCard = ({ name, description, image }: ProductCardProps) => {
       <div className="p-4 bg-card">
         <h3 className="font-display text-lg font-bold text-accent mb-1">{name}</h3>
         <p className="text-muted-foreground text-sm mb-3">{description}</p>
-        <a
-          href={getWhatsAppUrl(`Hi! I'm interested in ${name} from Divya Crackers.`)}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          to={`/enquiry?product=${encodeURIComponent(id)}`}
           className="inline-block px-4 py-2 rounded-lg bg-gradient-festive text-primary-foreground text-sm font-semibold hover:opacity-90 transition-opacity"
         >
           Enquire Now
-        </a>
+        </Link>
       </div>
     </div>
   );

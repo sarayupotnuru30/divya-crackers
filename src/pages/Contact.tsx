@@ -68,7 +68,7 @@ const Contact = () => {
             {/* Map */}
             <div className="sparkle-border rounded-xl overflow-hidden h-[400px] lg:h-auto">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.8!2d77.83!3d12.73!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBagalur%20Road%2C%20Hosur!5e0!3m2!1sen!2sin!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.5!2d77.8292!3d12.73814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae70ce79f3d365%3A0xe6c2700efd2cab06!2sDIVYA%20CRACKERS!5e0!3m2!1sen!2sin!4v1"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: "400px" }}
