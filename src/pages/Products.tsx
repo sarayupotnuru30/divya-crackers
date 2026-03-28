@@ -1,8 +1,3 @@
-import { useState } from "react";
-import heroBg from "@/assets/hero/hero-bg.jpg";
-import ProductCard from "@/components/ProductCard";
-import { products, categories } from "@/data/products";
-
 import heroBg from "@/assets/hero/hero-bg.jpg";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/data/products";
@@ -22,11 +17,11 @@ const Products = () => {
 
       <section className="section-darker py-16">
         <div className="container mx-auto px-4">
-          {/* Product Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {products.map((product) => (
               <ProductCard key={product.id} {...product} />
             ))}
+          </div>
         </div>
       </section>
     </div>
